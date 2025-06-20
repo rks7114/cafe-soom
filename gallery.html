@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>갤러리 | 숨카페</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 40px 0 60px 0;
+    }
+    .gallery-item {
+      width: 220px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      text-align: center;
+      transition: transform .17s;
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      border-radius: 16px 16px 0 0;
+    }
+    .gallery-caption {
+      font-size: 1rem;
+      color: #5c7763;
+      background: #f5f6f8;
+      padding: 8px 0 14px 0;
+      letter-spacing: -0.01em;
+    }
+    @media (max-width: 700px) {
+      .gallery-item { width: 96vw; }
+      .gallery-wrap { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="about.html">소개</a></li>
+        <li><a href="menu.html">메뉴</a></li>
+        <li><a href="gallery.html">갤러리</a></li>
+        <li><a href="location.html">위치</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 style="text-align:center; margin-top:38px;">숨카페 갤러리</h1>
+    <div class="gallery-wrap">
+      <div class="gallery-item">
+        <img src="images/cake1.png" alt="블루베리 치즈케이크">
+        <div class="gallery-caption">진한 블루베리와 부드러운 크림이 어우러진 시그니처 치즈케이크</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/latte1.png" alt="라떼 아트">
+        <div class="gallery-caption">직접 내린 에스프레소 위, 섬세한 라떼 아트 한 잔</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/macarons1.png" alt="수제 마카롱">
+        <div class="gallery-caption">색색의 수제 마카롱과 고소한 쿠키 세트</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/affogato1.png" alt="아포가토">
+        <div class="gallery-caption">에스프레소와 바닐라 아이스크림이 어우러진 아포가토</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/sandwich1.png" alt="샌드위치 브런치">
+        <div class="gallery-caption">든든한 샌드위치와 신선한 샐러드 브런치 세트</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/cafeinterior1.png" alt="카페 인테리어">
+        <div class="gallery-caption">식물과 햇살이 어우러진 아늑한 카페 인테리어</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
