@@ -1,7 +1,7 @@
-/* 전체 레이아웃 */
+/* 전체 레이아웃 및 폰트 */
 body {
-  font-family: 'Noto Sans KR', Arial, sans-serif;
-  background: #faf9f6;
+  font-family: 'Noto Sans KR', Quicksand, Arial, sans-serif;
+  background: #F7F6F2;   /* 따뜻한 베이지 */
   color: #222;
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ header {
 }
 
 nav a {
-  color: #222;
+  color: #5C7763;      /* 포인트 그린 */
   text-decoration: none;
   margin: 0 18px;
   font-size: 18px;
@@ -26,8 +26,8 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: #28a745;
-  border-bottom: 2px solid #28a745;
+  color: #BFA588;      /* 라이트 브라운 */
+  border-bottom: 2px solid #5C7763;
 }
 
 main {
@@ -40,11 +40,10 @@ main {
   text-align: center;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 16px;
-  font-weight: bold;
+h1, h2, h3 {
+  font-family: 'Quicksand', 'Noto Sans KR', sans-serif;
   color: #222;
+  font-weight: bold;
 }
 
 p {
@@ -54,7 +53,7 @@ p {
 
 /* 버튼 스타일 */
 .btn {
-  background-color: #222;
+  background-color: #BFA588;
   color: #fff;
   padding: 10px 24px;
   margin: 14px 6px;
@@ -63,68 +62,3 @@ p {
   display: inline-block;
   font-size: 16px;
   border: none;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
-}
-.btn:hover {
-  background-color: #444;
-  color: #fff;
-}
-
-.btn.green {
-  background-color: #28a745;
-}
-.btn.green:hover {
-  background-color: #218838;
-}
-
-/* 모바일 대응 */
-@media (max-width: 700px) {
-  main {
-    max-width: 98vw;
-    margin: 32px 2vw;
-    padding: 12px;
-  }
-  nav a {
-    font-size: 15px;
-    margin: 0 8px;
-  }
-  h1 {
-    font-size: 2em;
-  }
-}
-/* 갤러리 카드 스타일 */
-.gallery-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin: 40px 0 60px 0;
-}
-.gallery-item {
-  width: 220px;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  overflow: hidden;
-  text-align: center;
-  transition: transform .17s;
-  margin-bottom: 16px;
-}
-.gallery-item img {
-  width: 100%;
-  display: block;
-  border-radius: 16px 16px 0 0;
-}
-.gallery-caption {
-  font-size: 1rem;
-  color: #5c7763;
-  background: #f5f6f8;
-  padding: 8px 0 14px 0;
-  letter-spacing: -0.01em;
-}
-@media (max-width: 700px) {
-  .gallery-item { width: 96vw; }
-  .gallery-wrap { gap: 12px; }
-}
-
